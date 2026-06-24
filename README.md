@@ -59,17 +59,17 @@ Quantum-Noise-Analysis/
 
 ### Objective
 
-Generate a Bell State using Qiskit and establish an ideal baseline for future noise analysis experiments.
+Generate a Bell State using Qiskit and establish an ideal baseline for future quantum noise analysis and error mitigation experiments.
 
 ### Theoretical Bell State
 
 The Bell State generated in this experiment is:
 
-[
-\frac{|00\rangle + |11\rangle}{\sqrt{2}}
-]
+```text
+(|00⟩ + |11⟩)/√2
+```
 
-This state represents maximal two-qubit entanglement.
+This state is a maximally entangled two-qubit quantum state, where the measurement outcomes of both qubits are perfectly correlated.
 
 ### Bell State Circuit
 
@@ -81,22 +81,35 @@ This state represents maximal two-qubit entanglement.
 
 ### Observations
 
-* Only the states 00 and 11 were observed.
+* Only the states **00** and **11** were observed.
 * Both outcomes appeared with approximately equal probability.
-* No occurrences of 01 or 10 were detected.
-* The results confirm successful Bell State generation and entanglement.
+* No occurrences of **01** or **10** were detected.
+* The results confirm successful Bell State generation and quantum entanglement.
+* The measurement statistics closely match theoretical expectations for an ideal Bell State.
 
 ### Significance
 
-This experiment establishes the ideal reference state against which noisy and error-mitigated circuits will be compared throughout the project.
+This experiment establishes the ideal reference state against which noisy and error-mitigated circuits will be compared throughout the project. It serves as the baseline for evaluating the effects of quantum noise on entangled states in subsequent experiments.
 
 ---
 
+---
+
+## Experiment 02: Depolarizing Noise Analysis
+
+### Results
+
+![Depolarizing Noise Histogram](results/depolarizing_noise_histogram.png)
+
+![Depolarizing Noise Fidelity](results/depolarizing_noise_fidelity.png)
+
+### Key Observation
+
+Bell State survival probability decreases as depolarizing noise strength increases, demonstrating degradation of quantum information under realistic noise conditions.
+
 ## Planned Experiments
 
-### Experiment 02
 
-Depolarizing Noise Analysis
 
 ### Experiment 03
 
