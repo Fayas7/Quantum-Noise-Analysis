@@ -107,13 +107,44 @@ This experiment establishes the ideal reference state against which noisy and er
 
 Bell State survival probability decreases as depolarizing noise strength increases, demonstrating degradation of quantum information under realistic noise conditions.
 
+## Experiment 03: Bit-Flip Noise Analysis
+
+### Objective
+
+Investigate the effect of bit-flip errors on an entangled Bell State and analyze how increasing error probability alters measurement outcomes.
+
+### Background
+
+Bit-flip noise is one of the fundamental quantum error models and is analogous to a classical bit error. A bit-flip error changes a qubit state according to:
+
+```text
+|0⟩ → |1⟩
+|1⟩ → |0⟩
+```
+
+Unlike depolarizing noise, which introduces random disturbances, bit-flip noise produces structured and predictable error patterns.
+
+### Measurement Outcome Distribution
+
+![Bit Flip Distribution](results/bit_flip_probability_distribution.png)
+
+### Histogram Comparison
+
+![Bit Flip Histogram](results/bit_flip_histogram.png)
+
+### Key Results
+
+* The ideal Bell State produced only the outcomes **00** and **11**.
+* Increasing bit-flip probability reduced the occurrence of the correct Bell State outcomes.
+* Error states **01** and **10** appeared with increasing probability.
+* The resulting error patterns were structured and consistent with theoretical predictions.
+
+### Significance
+
+This experiment demonstrates how specific quantum error channels affect entangled quantum states and provides motivation for quantum error correction techniques designed to detect and correct bit-flip errors.
+---
+
 ## Planned Experiments
-
-
-
-### Experiment 03
-
-Bit-Flip Noise Analysis
 
 ### Experiment 04
 
@@ -144,19 +175,20 @@ Comparative Noise Study
 Error Mitigation Performance Evaluation
 
 ---
-
 ## Current Progress
 
 * [x] Project Setup
 * [x] Bell State Generation
 * [x] Ideal Quantum Simulation
-* [x] Measurement Analysis
+* [x] Depolarizing Noise Analysis
+* [x] Bit-Flip Noise Analysis
 * [x] Result Visualization
-* [ ] Depolarizing Noise Analysis
+* [ ] Phase-Flip Noise Analysis
+* [ ] Amplitude Damping Analysis
 * [ ] Fidelity Analysis
 * [ ] Error Mitigation
-* [ ] Comparative Evaluation
 * [ ] Final Research Report
+
 
 ---
 
