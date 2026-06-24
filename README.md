@@ -29,26 +29,38 @@ The project combines quantum computing theory, simulation, noise modeling, fidel
 * Jupyter Notebook
 
 ---
-
 ## Project Structure
 
 ```text
 Quantum-Noise-Analysis/
 │
 ├── docs/
-│   └── observations.md
+│   ├── experiment_01_bell_state.md
+│   ├── experiment_02_depolarizing_noise.md
+│   └── experiment_03_bit_flip_noise.md
 │
 ├── notebooks/
-│   └── 01_bell_state.ipynb
+│   ├── 01_bell_state.ipynb
+│   ├── 02_depolarizing_noise.ipynb
+│   └── 03_bit_flip_noise.ipynb
 │
 ├── results/
 │   ├── bell_circuit.png
-│   └── bell_histogram.png
+│   ├── bell_histogram.png
+│   ├── depolarizing_noise_histogram.png
+│   ├── depolarizing_noise_fidelity.png
+│   ├── bit_flip_histogram.png
+│   └── bit_flip_probability_distribution.png
 │
 ├── src/
+│   ├── __init__.py
+│   ├── circuits.py
+│   ├── noise_models.py
+│   └── visualization.py
 │
 ├── README.md
-└── .gitignore
+├── .gitignore
+└── test_imports.py
 ```
 
 ---
